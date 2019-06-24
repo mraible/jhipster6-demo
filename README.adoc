@@ -465,7 +465,7 @@ public ResponseEntity<?> deleteBlog(@PathVariable Long id) {
 }
 ----
 
-You'll need to make similar changes in `EntryResource.java`. See https://github.com/mraible/jhipster6-demo/commit/9694891f98c4c1076ee636664f2cb0f6cd7986f0[this commit] for all the changes that you'll need in these two classes, as well as their integration tests.
+You'll need to make similar changes in `EntryResource.java`. See https://github.com/mraible/jhipster6-demo/commit/73bd82f87274dc013a72839eda5925b5e22f4907[this commit] for all the changes that you'll need in these two classes, as well as their integration tests.
 
 == Deploy to the Cloud
 
