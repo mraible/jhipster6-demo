@@ -666,6 +666,6 @@ https://travis-ci.org[Travis CI] is continually testing this project with config
 
 **Matt Raible** is a web developer, Java Champion, and Developer Advocate at https://developer.okta.com[Okta]. Matt is a frequent contributor to open source and a big fan of Java, IntelliJ, TypeScript, Angular, and Spring Boot. When he's not slinging code with open source frameworks, he likes to ski with his family, restore classic VWs, and enjoy craft beer.
 
-Matt writes on the http://developer.okta.com/blog[Okta developer blog], his https://raibledesigns.com/[personal blog], and you can find him on Twitter https://twitter.com/mraible[@mraible].
+Matt writes on the http://developer.okta.com/blog[Okta developer blog], for https://www.infoq.com/profile/Matt-Raible/[InfoQ], and on his https://raibledesigns.com/[personal blog]. You can find him on Twitter https://twitter.com/mraible[@mraible].
 
 Matt is a developer on the https://www.jhipster.tech/team/[JHipster team], authored the https://www.infoq.com/minibooks/jhipster-mini-book[JHipster Mini-Book], and helped create https://www.pluralsight.com/courses/play-by-play-developing-microservices-mobile-apps-jhipster[Play by Play: Developing Microservices and Mobile Apps with JHipster].
