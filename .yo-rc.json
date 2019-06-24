@@ -35,6 +35,8 @@
     "otherModules": [],
     "enableTranslation": true,
     "nativeLanguage": "en",
-    "languages": ["en", "es"]
+    "languages": ["en", "es"],
+    "herokuAppName": "jhipster-6-demo",
+    "herokuDeployType": "git"
   }
 }
