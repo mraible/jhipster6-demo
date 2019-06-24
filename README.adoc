@@ -652,6 +652,8 @@ JHipster's awesome community has starred in some excellent online training video
 * https://www.pluralsight.com/courses/scaffolding-spring-boot-and-angular-with-jhipster[Scaffolding Spring Boot and Angular Web Apps with JHipster by Michael Hoffman]
 * https://linkedin-learning.pxf.io/c/1252615/449670/8005?u=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fjhipster-build-and-deploy-spring-boot-microservices%3Ftrk%3Dinsiders_43129714_learning[JHipster: Build and Deploy Spring Boot Microservices by Chris Anatalio]
 
+TIP: If you'd like to see a tutorial that's similar to this one and uses OIDC for authentication, see https://developer.okta.com/blog/2019/04/04/java-11-java-12-jhipster-oidc[Better, Faster, Lighter Java with Java 12 and JHipster 6].
+
 Follow https://twitter.com/java_hipster[@java_hipster] on Twitter for release announcements, articles, new features, and upcoming talks.
 
 == Source Code
