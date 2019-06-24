@@ -3,6 +3,7 @@ package org.jhipster.blog.web.rest;
 import org.jhipster.blog.BlogApp;
 import org.jhipster.blog.domain.Blog;
 import org.jhipster.blog.repository.BlogRepository;
+import org.jhipster.blog.repository.UserRepository;
 import org.jhipster.blog.web.rest.errors.ExceptionTranslator;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -13,6 +14,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.web.PageableHandlerMethodArgumentResolver;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
+import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.transaction.annotation.Transactional;
@@ -55,6 +57,9 @@ public class BlogResourceIT {
     private EntityManager em;
 
     @Autowired
+    private UserRepository userRepository;
+
+    @Autowired
     private Validator validator;
 
     private MockMvc restBlogMockMvc;
@@ -79,10 +84,11 @@ public class BlogResourceIT {
      * This is a static method, as tests for other entities might also need it,
      * if they test an entity which requires the current entity.
      */
-    public static Blog createEntity(EntityManager em) {
+    public Blog createEntity(EntityManager em) {
         Blog blog = new Blog()
             .name(DEFAULT_NAME)
-            .handle(DEFAULT_HANDLE);
+            .handle(DEFAULT_HANDLE)
+            .user(userRepository.findOneByLogin("user").get());
         return blog;
     }
     /**
@@ -105,6 +111,7 @@ public class BlogResourceIT {
 
     @Test
     @Transactional
+    @WithMockUser
     public void createBlog() throws Exception {
         int databaseSizeBeforeCreate = blogRepository.findAll().size();
 
@@ -180,6 +187,7 @@ public class BlogResourceIT {
 
     @Test
     @Transactional
+    @WithMockUser
     public void getAllBlogs() throws Exception {
         // Initialize the database
         blogRepository.saveAndFlush(blog);
@@ -192,9 +200,10 @@ public class BlogResourceIT {
             .andExpect(jsonPath("$.[*].name").value(hasItem(DEFAULT_NAME.toString())))
             .andExpect(jsonPath("$.[*].handle").value(hasItem(DEFAULT_HANDLE.toString())));
     }
-    
+
     @Test
     @Transactional
+    @WithMockUser
     public void getBlog() throws Exception {
         // Initialize the database
         blogRepository.saveAndFlush(blog);
@@ -218,6 +227,7 @@ public class BlogResourceIT {
 
     @Test
     @Transactional
+    @WithMockUser
     public void updateBlog() throws Exception {
         // Initialize the database
         blogRepository.saveAndFlush(blog);
@@ -265,6 +275,7 @@ public class BlogResourceIT {
 
     @Test
     @Transactional
+    @WithMockUser
     public void deleteBlog() throws Exception {
         // Initialize the database
         blogRepository.saveAndFlush(blog);
