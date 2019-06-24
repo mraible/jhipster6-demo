@@ -25,7 +25,7 @@ The brackets at the end of each step indicate the alias's or IntelliJ Live Templ
 
 . Restart application and show pre-loaded data
 
-. Turn off faker in `application-dev.yml`
+. Turn off faker in `application-dev.yml` and run `./mvnw clean`
 
 . Create a couple of blogs and entries for `admin` and `user`
 
