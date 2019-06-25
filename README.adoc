@@ -31,7 +31,7 @@ endif::[]
 This article shows you how to build a simple blog application with https://www.jhipster.tech/2019/06/23/jhipster-release-6.1.2.html[JHipster 6.1.2].
 
 ifdef::env-github[]
-TIP: It appears you're reading this document on GitHub. If you want a prettier view, install https://chrome.google.com/webstore/detail/asciidoctorjs-live-previe/iaalpfgpbocpdfblpnhhgllgbdbchmia[Asciidoctor.js Live Preview for Chrome], then view the https://raw.githubusercontent.com/mraible/jhipster6-demo/master/README.adoc[raw document]. Another option is to use the http://gist.asciidoctor.org/?github-mraible/jhipster6-demo//README.adoc[DocGist view].
+TIP: It appears you're reading this document on GitHub. If you want a prettier view, install https://chrome.google.com/webstore/detail/asciidoctorjs-live-previe/iaalpfgpbocpdfblpnhhgllgbdbchmia[Asciidoctor.js Live Preview for Chrome], then view the https://raw.githubusercontent.com/mraible/jhipster6-demo/master/README.adoc[raw document].
 endif::[]
 
 .Source Code
